@@ -36,7 +36,29 @@
 
     Mengapa? memang benar kita mendeklarasikan variabel `arr` tadi dengan panjang `5` nilai atau item. Tetapi komputer mengitung nilai tersebut dari nol. Maka, jika kita mau mengambil nilai paling akhir dari variabel `arr` tadi, maka kode yang tepat adalah:
 
-    > `System.out.println(arr[4])`
+    > `System.out.println(arr[4]);`
 
     Karena komputer memulai nya dengan indeks `0`
 
+2. Excepions2 Java File
+    Pada file yang kedua kali ini, adalah bagaimana contoh error dari `ArithmeticException`
+
+    Pertama adalah membuat variabel `int` dengan nama `a` yang akan diisi dengan nilai `9 / 0`.
+
+    > `int a = 9 / 0;`
+
+    kedua Lalu kita memasukan variabel `a` kedalam try-catch seperti ini
+
+    >`try {`
+    >`    int a = 9 / 0;`
+    >`} catch(Exception e) {`
+    > ` e.printStackTrace();`
+    > `}`
+    
+
+    Ketiga kita ambil isi dari variabel `a` tadi dengan nilai `9 / 0` dengan menampilkan output dengan kode `System.out.println`
+
+    >`try {`
+    >    `int a = 9 / 0;`
+    >    `System.out.println(a);`
+    >`} catch()`
