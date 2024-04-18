@@ -8,11 +8,11 @@
 
     Pertama kita menulis blok kode di dalam try-catch yang nantinya berfungsi sebagai menangkap error.
 
-    > ```try {```
-    > ``` ```
-    > ```} catch() {```
-    > ``` ```
-    > ```}```
+    > `try {`
+    > ` `
+    > `} catch() {`
+    > ` `
+    > `}`
 
     Kedua kita ambil isi dari variabel `arr` tadi dengan indeks `5` dengan menampilkan output dengan kode `System.out.println`
 
