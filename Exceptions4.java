@@ -17,6 +17,10 @@ public class Exceptions4 {
             test(a);
         } catch(Exception e) {
             e.printStackTrace();
+	    /*java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "some" is null
+                at Real.Exceptions4.test(Exceptions4.java:25)
+                at Real.Exceptions4.main(Exceptions4.java:18)
+            */
         }
     }
     

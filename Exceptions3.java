@@ -18,6 +18,13 @@ public class Exceptions3 {
             System.out.println("Umur kamu adalah " + umur);
         } catch(Exception e) {
             e.printStackTrace();
+	    /*java.util.InputMismatchException
+                at java.base/java.util.Scanner.throwFor(Scanner.java:964)
+                at java.base/java.util.Scanner.next(Scanner.java:1619)
+                at java.base/java.util.Scanner.nextInt(Scanner.java:2284)
+                at java.base/java.util.Scanner.nextInt(Scanner.java:2238)
+                at Real.Exceptions3.main(Exceptions3.java:18)
+            */
         }
     }
 }

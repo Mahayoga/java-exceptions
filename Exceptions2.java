@@ -14,6 +14,9 @@ public class Exceptions2 {
             System.out.println(a);
         } catch(Exception e) {
             e.printStackTrace();
+	    /*java.lang.ArithmeticException: / by zero
+                at Real.Exceptions2.main(Exceptions2.java:14)
+            */
         }
     }
 }

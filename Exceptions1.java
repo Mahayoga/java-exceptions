@@ -14,6 +14,9 @@ public class Exceptions1 {
             System.out.println(arr[5]);
         } catch(Exception e) {
             e.printStackTrace();
+	    /* java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+                at Real.Exceptions1.main(Exceptions1.java:15)
+            */
         }
     }
 }
