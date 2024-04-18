@@ -70,3 +70,18 @@
     Yang terjadi adalah java akan melempar error berupa `ArithmeticException` yang artinya adalah nilai pada variabel `a` mengalami error karena pembagian dengan `0`.
 
     Mengapa? Karena kita memang tidak bisa membagi sebuah bilangan dengan nol.
+
+3. Exceptions3 Java File
+    Pada di file java yang ketiga ini, adalah contoh bagaimana error dari `InputMismatchException`.
+
+    Pertama adalah membuat objek `Scanner` dengan nama objek `sc`.
+
+    > `Scanner sc = new Scanner(System.in);`
+
+    Kedua, didalam blok kode `try-catch`, Kita akan menanyakan pada user di console untuk memasukkan umur yang nantinya akan di simpan di dalam variabel integer dengan nama `umur` yang cara menerima outputnya adalah dengan objek `Scanner` tadi. Setelah itu menampilkan output umur nya di dalam console.
+
+    > `System.out.print("Masukkan umur kamu: ");`
+    > `int umur = sc.nextInt();`
+    > `System.out.println("Umur kamu adalah " + umur);`
+
+    Kode di atas adalah kode yang normal atau tidak ada masalah pada struktur kode, tetapi perhatikan bagaimana kita akan mengisi nilai `int` pada variabel `umur` dengan `Scanner`. Jika kita menginputkan huruf yang bertipe data `String` kedalam variabel `int`, maka yang terjadi adalah kita mendapatkan error `InputMismatchException`.
