@@ -17,7 +17,7 @@
     Kedua kita ambil isi dari variabel `arr` tadi dengan indeks `5` dengan menampilkan output dengan kode `System.out.println`
 
     > ```try {```
-    > ```Systm.out.println(arr[5]);```
+    > ```System.out.println(arr[5]);```
     > ```} catch() {```
     > ``` ```
     > ```}```
@@ -25,7 +25,7 @@
     Ketiga kita mengisi Exception dengan nama objek `e` didalam kurung `catch` dan memberi output di dalam blok kode `catch`
 
     > ```try {```
-    > ```Systm.out.println(arr[5]);```
+    > ```System.out.println(arr[5]);```
     > ```} catch(Exception e) {```
     > ```e.printStackTrace()```
     > ```}```
@@ -52,13 +52,21 @@
     >`try {`
     >`    int a = 9 / 0;`
     >`} catch(Exception e) {`
-    > ` e.printStackTrace();`
+    > `   e.printStackTrace();`
     > `}`
     
 
     Ketiga kita ambil isi dari variabel `a` tadi dengan nilai `9 / 0` dengan menampilkan output dengan kode `System.out.println`
 
-    >`try {`
+    > `try {`
     >    `int a = 9 / 0;`
     >    `System.out.println(a);`
-    >`} catch()`
+    > `} catch(Exception e) {`
+    > `   e.printStackTrace();`
+    > `}`
+
+    Hasilnya adalah, awalnya variabel `int` yang bernama `a` dideklarasikan dengan panjang nilai hasil dari `9 / 0`. Kemudian di dalam blok kode `try-catch`, kita akan meng-outputkan variabel `a` tadi kedalam console output.
+    
+    Yang terjadi adalah java akan melempar error berupa `ArithmeticException` yang artinya adalah nilai pada variabel `a` mengalami error karena pembagian dengan `0`.
+
+    Mengapa? Karena kita memang tidak bisa membagi sebuah bilangan dengan nol.
