@@ -85,3 +85,18 @@
     > `System.out.println("Umur kamu adalah " + umur);`
 
     Kode di atas adalah kode yang normal atau tidak ada masalah pada struktur kode, tetapi perhatikan bagaimana kita akan mengisi nilai `int` pada variabel `umur` dengan `Scanner`. Jika kita menginputkan huruf yang bertipe data `String` kedalam variabel `int`, maka yang terjadi adalah kita mendapatkan error `InputMismatchException`.
+
+4. Exceptions4 Java File
+    Pada di file java yang ketiga ini, adalah contoh bagaimana error dari `NullPointerException`.
+
+    Pertama adalah membuat kode `try-catch` yang nantinya akan diisi variabel wrapper `Integer` dengan nama `a` yang diisi dengan nilai `null`.
+
+    > `Integer a = null;`
+
+    Kedua adalah membuat variabel `int` dengan nama `result` yang akan diisi nilai dari hasil menjalankan method `toInt` yang akan mengembalikan nilai `Integer` ke `int` dan di output kan.
+
+    > `int result = toInt(a);`
+
+    Ketiga adalah membuat method `toInt` yang mempunyai parameter `Integer some` yang nantinya akan mengembalikan nilai `int`
+
+    Lalu yang akan terjadi adalah semenjak kita mengisi variabel `a` dengan `null`, maka yang terjadi adalah akan terjadi error saat menjalankan method `toInt` karena method tersebut mengakses sebuah atribut dari bawaan class `Integer`. karena variabel `a` itu `null`, maka java akan mengembalikan error berupa `NullPointerException`.
