@@ -17,17 +17,23 @@
     Kedua kita ambil isi dari variabel `arr` tadi dengan indeks `5` dengan menampilkan output dengan kode `System.out.println`
 
     > ```try {```
+    >
     > ```System.out.println(arr[5]);```
+    >
     > ```} catch() {```
-    > ``` ```
+    >
     > ```}```
 
     Ketiga kita mengisi Exception dengan nama objek `e` didalam kurung `catch` dan memberi output di dalam blok kode `catch`
 
     > ```try {```
+    >
     > ```System.out.println(arr[5]);```
+    >
     > ```} catch(Exception e) {```
+    >
     > ```e.printStackTrace()```
+    >
     > ```}```
 
     Hasilnya adalah, awalnya variabel array yang bernama `arr` dideklarasikan dengan panjang nilai `5` dan diberikan nilai di setiap panjang nya. Kemudian di dalam blok kode `try-catch`, kita akan meng-outputkan variabel `arr` tadi, dengan indeks `5`.
@@ -50,9 +56,13 @@
     kedua Lalu kita memasukan variabel `a` kedalam try-catch seperti ini
 
     >`try {`
+    >
     >`    int a = 9 / 0;`
+    >
     >`} catch(Exception e) {`
+    >
     > `   e.printStackTrace();`
+    >
     > `}`
     
 
@@ -60,9 +70,13 @@
 
     > `try {`
     >    `int a = 9 / 0;`
+    >
     >    `System.out.println(a);`
+    >
     > `} catch(Exception e) {`
+    >
     > `   e.printStackTrace();`
+    >
     > `}`
 
     Hasilnya adalah, awalnya variabel `int` yang bernama `a` dideklarasikan dengan panjang nilai hasil dari `9 / 0`. Kemudian di dalam blok kode `try-catch`, kita akan meng-outputkan variabel `a` tadi kedalam console output.
@@ -81,7 +95,9 @@
     Kedua, didalam blok kode `try-catch`, Kita akan menanyakan pada user di console untuk memasukkan umur yang nantinya akan di simpan di dalam variabel integer dengan nama `umur` yang cara menerima outputnya adalah dengan objek `Scanner` tadi. Setelah itu menampilkan output umur nya di dalam console.
 
     > `System.out.print("Masukkan umur kamu: ");`
+    >
     > `int umur = sc.nextInt();`
+    >
     > `System.out.println("Umur kamu adalah " + umur);`
 
     Kode di atas adalah kode yang normal atau tidak ada masalah pada struktur kode, tetapi perhatikan bagaimana kita akan mengisi nilai `int` pada variabel `umur` dengan `Scanner`. Jika kita menginputkan huruf yang bertipe data `String` kedalam variabel `int`, maka yang terjadi adalah kita mendapatkan error `InputMismatchException`.
