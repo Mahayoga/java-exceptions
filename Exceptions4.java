@@ -14,7 +14,8 @@ public class Exceptions4 {
         Scanner sc = new Scanner(System.in);
         try {
             Integer a = null;
-            test(a);
+            int result = toInt(a);
+            System.out.println(a);
         } catch(Exception e) {
             e.printStackTrace();
 	    /*java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "some" is null
@@ -24,7 +25,7 @@ public class Exceptions4 {
         }
     }
     
-    public static int test(Integer some) {
+    public static int toInt(Integer some) {
         return some.intValue();
     }
 }
